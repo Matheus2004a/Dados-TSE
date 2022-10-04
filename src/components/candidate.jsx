@@ -1,4 +1,8 @@
 export function Candidate(props) {
+    function formatVotes(votes) {
+        return Number(votes).toLocaleString("pt-BR")
+    }
+
     return (
         <table class="table">
             <thead>
@@ -14,7 +18,7 @@ export function Candidate(props) {
                     <th scope="row">{props.num}</th>
                     <td>{props.name}</td>
                     <td>{props.per}%</td>
-                    <td>{props.votos}</td>
+                    <td>{formatVotes(props.votes)}</td>
                 </tr>
             </tbody>
         </table>

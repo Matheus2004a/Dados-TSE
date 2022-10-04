@@ -35,7 +35,7 @@ function App() {
           num={data.n}
           name={data.nm}
           per={data.pvap}
-          votos={data.vap}
+          votes={data.vap}
         />
       ))}
     </div>
