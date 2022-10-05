@@ -1,10 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Poppins', sans-serif;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
-.App {
-  
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.App button[type="submit"] {
+  padding: .5rem 1rem;
+  border-radius: 5px;
 }

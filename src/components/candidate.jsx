@@ -8,7 +8,7 @@ export function Candidate(props) {
             <thead>
                 <tr>
                     <th scope="col">Nº</th>
-                    <th scope="col">Candidato(a)</th>
+                    <th scope="col">Presidentes</th>
                     <th scope="col">Porcentagem</th>
                     <th scope="col">Total dos votos</th>
                 </tr>
