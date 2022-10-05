@@ -16,6 +16,10 @@ button {
   outline: none;
 }
 
+.App {
+  display: grid;
+}
+
 .App button[type="submit"] {
   padding: .5rem 1rem;
   border-radius: 5px;

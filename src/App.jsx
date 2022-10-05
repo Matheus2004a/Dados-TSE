@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from "axios"
 import './App.css'
-import { Candidate } from './components/candidate'
+import { TableCandidates } from './components/table'
 import { Card } from "./components/card"
 import { API_URL } from "../services/tse"
 import { ToastContainer, toast } from "react-toastify"
@@ -43,14 +43,7 @@ function App() {
 
       <h3>Porcentagem das urnas apuradas: {urnas} %</h3>
 
-      {candidates.map(data => (
-        <Candidate
-          num={data.n}
-          name={data.nm}
-          per={data.pvap}
-          votes={data.vap}
-        />
-      ))}
+      <TableCandidates candidates={candidates} />
     </div>
   )
 }
