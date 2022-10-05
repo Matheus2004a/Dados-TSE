@@ -1,5 +1,5 @@
 export function Card(props) {
     return (
-        <p>Última atualização: {props.date} {props.hour}</p>
+        <p className="desc-update">Última atualização: {props.date} às {props.hour}</p>
     )
 }

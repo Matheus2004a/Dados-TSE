@@ -3,6 +3,7 @@ import { Candidate } from "../components/candidate"
 export function TableCandidates(props) {
     return (
         <table class="table">
+            <caption><h3>Porcentagem das urnas apuradas: {props.urnas} %</h3></caption>
             <thead>
                 <tr>
                     <th scope="col">Nº</th>

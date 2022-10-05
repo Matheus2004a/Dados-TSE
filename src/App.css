@@ -7,7 +7,6 @@
 
 #root {
   padding: 2rem;
-  text-align: center;
 }
 
 button {
@@ -18,9 +17,20 @@ button {
 
 .App {
   display: grid;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.App h1 {
+  text-align: center;
 }
 
 .App button[type="submit"] {
+  width: fit-content;
   padding: .5rem 1rem;
   border-radius: 5px;
+}
+
+.App .desc-update {
+  text-align: left;
 }

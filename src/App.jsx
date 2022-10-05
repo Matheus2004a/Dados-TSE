@@ -41,9 +41,10 @@ function App() {
         hour={updates.ht}
       />
 
-      <h3>Porcentagem das urnas apuradas: {urnas} %</h3>
-
-      <TableCandidates candidates={candidates} />
+      <TableCandidates
+        candidates={candidates}
+        urnas={urnas}
+      />
     </div>
   )
 }

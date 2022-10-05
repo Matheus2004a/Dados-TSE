@@ -1,0 +1,16 @@
+table caption {
+    margin-bottom: 1rem;
+}
+
+thead tr th,
+tr td {
+    padding: .5rem 1rem;
+}
+
+thead tr {
+    background: #a9a9a9;
+}
+
+tr:nth-child(odd):not(thead tr) {
+    background: #d3d3d3;
+}
