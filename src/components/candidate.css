@@ -8,9 +8,9 @@ tr td {
 }
 
 thead tr {
-    background: #a9a9a9;
+    background: var(--dark-grey);
 }
 
 tr:nth-child(odd):not(thead tr) {
-    background: #d3d3d3;
+    background: var(--grey);
 }

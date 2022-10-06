@@ -5,8 +5,15 @@
   font-family: 'Roboto', 'Poppins', sans-serif;
 }
 
-#root {
-  padding: 2rem;
+:root {
+  --white: #ffffff;
+  --purple-light: #C6B8D9;
+  --purple-dark: #52378C;
+  --purple: #503BD9;
+  --yellow: #F29F05;
+  --dark-grey: #a9a9a9;
+  --grey: #d3d3d3;
+  --light-grey: #F2F2F2;
 }
 
 button {
@@ -29,8 +36,44 @@ button {
   width: fit-content;
   padding: .5rem 1rem;
   border-radius: 5px;
+  background: var(--light-grey);
+  color: var(--purple-dark);
+  font-weight: 500;
+  transition: background .5s;
+}
+
+.App button[type="submit"]:active {
+  background: var(--purple-light);
 }
 
 .App .desc-update {
   text-align: left;
+  color: var(--purple-dark);
+  font-weight: 500;
+}
+
+.card {
+  display: grid;
+  gap: 1rem;
+  box-shadow: 2px 2px 7px 5px var(--light-grey);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.table {
+  box-shadow: 2px 2px 7px 5px var(--light-grey);
+  border-radius: 5px;
+}
+
+.table tbody span {
+  background: var(--light-grey);
+  color: var(--dark-grey);
+  padding: 3px .5rem;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.table .seg-turno span {
+  background: var(--purple-dark);
+  color: var(--white);
 }
