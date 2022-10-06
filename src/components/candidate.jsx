@@ -11,6 +11,9 @@ export function Candidate(props) {
             <td>{props.name}</td>
             <td>{props.per}%</td>
             <td>{formatVotes(props.votes)}</td>
+            <td className={props.status !== "Não eleito" && `seg-turno`}>
+                <span>{props.status}</span>
+            </td>
         </tr>
     )
 }

@@ -10,6 +10,7 @@ export function TableCandidates(props) {
                     <th scope="col">Presidentes</th>
                     <th scope="col">Porcentagem</th>
                     <th scope="col">Total dos votos</th>
+                    <th scope="col">Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -19,6 +20,7 @@ export function TableCandidates(props) {
                         name={data.nm}
                         per={data.pvap}
                         votes={data.vap}
+                        status={data.st}
                     />
                 ))}
             </tbody>

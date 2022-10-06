@@ -34,9 +34,9 @@ function App() {
       <ToastContainer />
 
       <h1>Status da Votação 2022</h1>
-      <button type="submit" onClick={updateDataCandidates}>Atualizar dados</button>
 
       <Card
+        updCandidates={updateDataCandidates}
         date={updates.dt}
         hour={updates.ht}
       />
