@@ -14,7 +14,6 @@ function App() {
 
   async function updateDataCandidates() {
     axios.get(API_URL).then(response => {
-      console.log(response.data)
       setUrnas(response.data.pst)
       setCandidates(response.data.cand)
       setUpdates(response.data)
